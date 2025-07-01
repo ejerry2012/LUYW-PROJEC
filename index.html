@@ -5,68 +5,41 @@
   <meta charset="UTF-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>lightupyourworld</title>
+  <title>light up your world</title>
   <link rel="stylesheet" href="styles.css" />
-  <link rel="stylesheet" href="./assets/fontawesome-free-6.4.0-web/css/all.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+  
 </head>
 
+
 <body>
-  <div class="navbar">
-    <div class="logo"> <img src="./assets/images/20231025_131154.jpg" alt=""></div>
-    <div class="wrp">
-      <div class="nav-links">
-        <div class="links">
-          <ul>
-            <a href="#home" >
-              <li>home</li>
-            </a>
-            <a href="#gallery">
-              <li>gallery</li>
-            </a>
-            <a href="#about us">
-              <li>about us</li>
-            </a>
-            <a href="#contact us">
-              <li>contact us</li>
-            </a>
-            
-            <a href="#faq's">
-              <li>faq's</li>
-            </a>
+  
 
-          </ul>
-        </div>
-      </div>
-    </div>
-
-
-    <div class="mobile-navbar">
-      <div class="menu-icon" id="menu" onclick="toggleMenu()"><i class="fa fa-bars"></i></div>
-      <div class="mobile-links" id="mobile-link">
-        <ul>
-          <a style="text-decoration: none;" href="#home">
-            <li>home</li>
-          </a>
-          <a style="text-decoration: none;" href="#gallery">
-            <li>gallery</li>
-          </a>
-          <a style="text-decoration: none;" href="#about us">
-            <li>about us</li>
-          </a>
-          <a style="text-decoration: none;" href="#contact us">
-            <li>contact us</li>
-          </a>
-          <a style="text-decoration: none;" href="#faq's">
-            <li>faq's</li>
-          </a>
-
-
-        </ul>
-      </div>
-    </div>
+  <!-- NAVIGATION BAR -->
+<nav class="navbar" id="navbar">
+  <div class="logo">
+    <img src="./assets/images/20231025_131154.jpg" alt="Logo" />
   </div>
 
+  <ul class="nav-links" id="navLinks">
+    <li><a href="#home">Home</a></li>
+    <li><a href="#about-us">About Us</a></li>
+    <li><a href="#faq">FAQs</a></li>
+    <li><a href="#gallery">Gallery</a></li>
+    <li><a href="#contact-us">Contact</a></li>
+  </ul>
 
+  <div class="menu-toggle" id="menu-toggle">
+  <span class="bar"></span>
+  <span class="bar"></span>
+  <span class="bar"></span>
+</div>
+</nav>
+
+
+
+<!-- HERO SECTION -->
   <div class="hero-section" id="home">
 
     <div class="mq-bhv">
@@ -86,322 +59,358 @@
     </div>
   </div>
 
-  <div class="L3" id="about us">
-    <div class="trending">
-      <div class="content">
-        <span class="what">What we do</span>
-        <p>
-          We are a result-oriented, tested and trusted organisation.
-          we offer one-to-one tutoring, to pupils/students, to be able to access the knowledge, skills, and experience
-          needed to thrive tomorrow.
 
-        </p>
-      </div>
-
-      <div class="image">
-        <img src="./assets/images/FB_IMG_16981490360423221.jpg" alt="">
-      </div>
-
-
+  <!-- ABOUT SECTION -->
+  <div class="about-us" id="about-us">
+    <h2 class="section-title">About Us</h2>
+  <div class="section">
+    <div class="text">
+      <span class="title">What we do</span>
+      <p>
+        We are a result-oriented, tested and trusted organisation.
+        We offer one-to-one tutoring to pupils/students to help them access the knowledge, skills, and experience
+        needed to thrive tomorrow.
+      </p>
     </div>
 
-    <div class="core-val">
-      <div class="content">
-        <span class="what">Our mission</span>
-        <p>
-          Our mission as an organisation, is to develop the intellectual, ethical, and interpersonal foundations our
-          students need, to become constructive contributors to the society.
-
-        </p>
-      </div>
-
-      <div class="image">
-        <img src="./assets/images/istockphoto-874565232-612x612.jpg" alt="">
-      </div>
-
-
+    <div class="image">
+      <img src="./assets/images/FB_IMG_16981490360423221.jpg" alt="What we do">
     </div>
   </div>
 
-  <h1 class="title">Give your children our tutor experience</h1>
+  <div class="section">
+    <div class="text">
+      <span class="title">Our mission</span>
+      <p>
+        Our mission as an organisation is to develop the intellectual, ethical, and interpersonal foundations our
+        students need to become constructive contributors to society.
+      </p>
+    </div>
+
+    <div class="image">
+      <img src="./assets/images/istockphoto-874565232-612x612.jpg" alt="Our mission">
+    </div>
+  </div>
+</div>
+
+  <h1 class="title" style="margin-top: 10px;">Give your children our tutor experience</h1>
 
   <div class="edu-feature-wrapper">
-    <div class="edu-feature">
-      <div class="icon"><i class="fas fa-chalkboard-teacher fa-2x"></i></div>
-
-      <div class="desc">
-        <div class="caps">Professional Tutors</div>
-        <p>At light up your world, we have the best team of teachers. </p>
-      </div>
+  <div class="edu-feature">
+    <div class="icon"><i class="fas fa-chalkboard-teacher fa-2x"></i></div>
+    <div class="desc">
+      <div class="caps">Professional Tutors</div>
+      <p>At Light Up Your World, we have the best team of teachers.</p>
     </div>
-
-    <div class="edu-feature">
-      <div class="icon"><i class="fa fa-user fa-2x"></i></div>
-
-      <div class="desc">
-        <div class="caps">Trusted Tutors</div>
-        <p>Over the years, parents have trusted us to help their children attain excellent performance.</p>
-      </div>
-    </div>
-
-    <div class="edu-feature">
-      <div class="icon"><i class="fas fa-book-reader fa-2x"></i></div>
-
-      <div class="desc">
-        <div class="caps">Customized Learning</div>
-        <p>At light up your world, we customize the learning process for each child, so they can learn at their pace.
-        </p>
-      </div>
-    </div>
-
-
   </div>
 
-  </div>
-  <h1 class="title">Why you need a home tutor</h1>
-
-  <div class="edu-feature-wrapper">
-    <div class="edu-feature">
-      <div class="icon"><i class="fas fa-book-open fa-2x"></i></div>
-
-      <div class="desc">
-        <div class="caps">Examination Preparation</div>
-        <p>One of our key responsibilities at light up your world is to get your children ready for their internal and
-          external examination. </p>
-      </div>
+  <div class="edu-feature">
+    <div class="icon"><i class="fa fa-user fa-2x"></i></div>
+    <div class="desc">
+      <div class="caps">Trusted Tutors</div>
+      <p>Over the years, parents have trusted us to help their children attain excellent performance.</p>
     </div>
-
-    <div class="edu-feature">
-      <div class="icon"><i class="fa fa-calculator fa-2x"></i></div>
-
-      <div class="desc">
-        <div class="caps">Mathematics</div>
-        <p>We help students find their footing in mathematics, calculus, further maths, quantitative reasoning etc.</p>
-      </div>
-    </div>
-
-    <div class="edu-feature">
-      <div class="icon"><i class="fas fa-child fa-2x"></i></div>
-
-      <div class="desc">
-        <div class="caps">Nursery and Pre-school</div>
-        <p>We teach nursery and pre-school subjects at all elementary levels.</p>
-      </div>
-    </div>
-    <div class="edu-feature">
-      <div class="icon"><i class="fas fa-book fa-2x"></i></div>
-
-      <div class="desc">
-        <div class="caps">English Language</div>
-        <p>We teach students the core of English language, literature, grammar, etc. </p>
-      </div>
-    </div>
-
-    <div class="edu-feature">
-      <div class="icon"><i class="fas fa-microscope fa-2x"></i></div>
-
-      <div class="desc">
-        <div class="caps">Science Subjects</div>
-        <p>We make chemistry, physics and biology learning seamless. </p>
-      </div>
-    </div>
-
-    <div class="edu-feature">
-      <div class="icon"><i class="fas fa-briefcase fa-2x"></i></div>
-
-      <div class="desc">
-        <div class="caps">Business $ Commerce</div>
-        <p>Our home tutors also cover economics, accounting, commerce and more. </p>
-      </div>
-    </div>
-
   </div>
 
-
-  <h1 class="title">How to request for our home tutors</h1>
-
-  <div class="edu-feature-wrapper">
-    <div class="edu-feature">
-      <div class="desc">
-        <div class="caps">Place request for home tutors in Abuja</div>
-        <p>Place a home tutor request by getting in touch with light up your world customer help line. We run a profile
-          analysis for your kid, and then deploy a home tutor. </p>
-      </div>
+  <div class="edu-feature">
+    <div class="icon"><i class="fas fa-book-reader fa-2x"></i></div>
+    <div class="desc">
+      <div class="caps">Customized Learning</div>
+      <p>We customize the learning process for each child so they can learn at their pace.</p>
     </div>
+  </div>
+</div>
 
-    <div class="edu-feature">
-      <div class="desc">
-        <div class="caps">A professional home tutor is deployed</div>
-        <p>Our professional home tutors would produce the desired excellence in your children. We ensure only the best
-          hands are used.</p>
-      </div>
+<h1 class="title">Why you need a home tutor</h1>
+
+<!-- Feature Section 2 -->
+<div class="edu-feature-wrapper">
+  <div class="edu-feature">
+    <div class="icon"><i class="fas fa-book-open fa-2x"></i></div>
+    <div class="desc">
+      <div class="caps">Examination Preparation</div>
+      <p>We get your children ready for both internal and external examinations.</p>
     </div>
-
-    <div class="edu-feature">
-      <div class="desc">
-        <div class="caps">Our tutors guide your kids to excellence</div>
-        <p>We ensure a professional home tutor that can produce the desired excellence in your children is deployed to
-          your home. Our rigorous recruitment procedures ensures only the best hands are used as tutors.</p>
-      </div>
-    </div>
-
-
   </div>
 
-  <div class="testifier">
-    <div class="t">
-      <div class="test" >Testimony</div>
-      <p>"I have seen remarkable performances from my children. Thanks to the amazing work, Light Up Your World Tutors
-        have
-        done. I will recomend them anywhere, any time." -Mrs. Joy</p>
+  <div class="edu-feature">
+    <div class="icon"><i class="fa fa-calculator fa-2x"></i></div>
+    <div class="desc">
+      <div class="caps">Mathematics</div>
+      <p>We help students master mathematics, calculus, further maths, and quantitative reasoning.</p>
     </div>
-
   </div>
+
+  <div class="edu-feature">
+    <div class="icon"><i class="fas fa-child fa-2x"></i></div>
+    <div class="desc">
+      <div class="caps">Nursery and Pre-school</div>
+      <p>We teach nursery and pre-school subjects across all elementary levels.</p>
+    </div>
+  </div>
+
+  <div class="edu-feature">
+    <div class="icon"><i class="fas fa-book fa-2x"></i></div>
+    <div class="desc">
+      <div class="caps">English Language</div>
+      <p>We teach the core of English language, including literature and grammar.</p>
+    </div>
+  </div>
+
+  <div class="edu-feature">
+    <div class="icon"><i class="fas fa-microscope fa-2x"></i></div>
+    <div class="desc">
+      <div class="caps">Science Subjects</div>
+      <p>We make learning chemistry, physics, and biology seamless.</p>
+    </div>
+  </div>
+
+  <div class="edu-feature">
+    <div class="icon"><i class="fas fa-briefcase fa-2x"></i></div>
+    <div class="desc">
+      <div class="caps">Business & Commerce</div>
+      <p>Our tutors also cover economics, accounting, commerce, and more.</p>
+    </div>
+  </div>
+</div>
+
+<h1 class="title">How to request for our home tutors</h1>
+
+<!-- Feature Section 3 -->
+<div class="edu-feature-wrapper">
+  <div class="edu-feature">
+    <div class="desc">
+      <div class="caps">Place request for home tutors in Abuja</div>
+      <p>Contact Light Up Your World to place a request. We analyze your child's profile and assign a suitable tutor.</p>
+    </div>
+  </div>
+
+  <div class="edu-feature">
+    <div class="desc">
+      <div class="caps">A professional home tutor is deployed</div>
+      <p>Our experienced tutors ensure your children achieve academic excellence.</p>
+    </div>
+  </div>
+
+  <div class="edu-feature">
+    <div class="desc">
+      <div class="caps">Our tutors guide your kids to excellence</div>
+      <p>We deploy only top-tier tutors, thanks to our strict recruitment process.</p>
+    </div>
+  </div>
+</div>
   
-  <div class="accordion" id="faq's">
+
+<!-- TESTIMONIAL SECTION -->
+<section class="testimonials" id="testimonials">
+  <h2 class="section-title">Testimonials</h2>
+  <div class="swiper testimonialSwiper">
+    <div class="swiper-wrapper">
+
+      <!-- Testimonial 1 -->
+      <div class="swiper-slide testimonial-card">
+        <p class="testimonial-text">
+          "Light Up Your World helped my child excel academically. Their tutors are very professional and patient."
+        </p>
+        <h4 class="client-name">Mrs. Adebayo</h4>
+        <span class="client-title">Parent, Abuja</span>
+      </div>
+
+      <!-- Testimonial 2 -->
+      <div class="swiper-slide testimonial-card">
+        <p class="testimonial-text">
+          "I was amazed by the personalized attention my daughter received. Highly recommended!"
+        </p>
+        <h4 class="client-name">Mr. Obinna</h4>
+        <span class="client-title">Client</span>
+      </div>
+
+      <!-- Testimonial 3 -->
+      <div class="swiper-slide testimonial-card">
+        <p class="testimonial-text">
+          "Their service is top-notch. Very reliable and easy to work with."
+        </p>
+        <h4 class="client-name">Fatima Usman</h4>
+        <span class="client-title">Parent, Wuse</span>
+      </div>
+
+      <!-- Testimonial 4 -->
+      <div class="swiper-slide testimonial-card">
+        <p class="testimonial-text">
+          "We got a tutor within 48 hours and the results were immediate. Excellent service!"
+        </p>
+        <h4 class="client-name">Chuka Eze</h4>
+        <span class="client-title">Satisfied Client</span>
+      </div>
+
+    </div>
+
+    <!-- Pagination -->
+    <div class="swiper-pagination"></div>
+  </div>
+</section>
+
+  
+  
+<!-- FAQ SECTION -->
+ <h2 class="section-title" id="faq">Frequently Asked Questions</h2>
+<div class="accordion">
+  
     <div class="accordion-content">
       <header>
         <span class="title">What locations do we cover in Abuja?</span>
         <i class="fa-solid fa-plus"></i>
       </header>
-  
-  <p class="description">
-    Parents have the liberty to choose where they want their children to take their private lessons. We cover virtually every major area in Abuja.
-  </p>
-  
+      <p class="description">
+        Parents have the liberty to choose where they want their children to take their private lessons. We cover virtually every major area in Abuja.
+      </p>
     </div>
-  
+
     <div class="accordion-content">
       <header>
         <span class="title">How do we verify our home tutors?</span>
         <i class="fa-solid fa-plus"></i>
       </header>
-  
-  <p class="description">
-    Light Up Your World is a responsible company that is committed, and ensures the safety of our clients a
-            priority.
-            Background checks are carried out before engaging any tutor.
-  </p>
-  
+      <p class="description">
+        Light Up Your World is a responsible company that is committed, and ensures the safety of our clients a priority.
+        Background checks are carried out before engaging any tutor.
+      </p>
     </div>
-  
+
     <div class="accordion-content">
       <header>
-        <span class="title" style="max-width: 50%; margin-right: 30px;">What happens if we are not satisfied with the home tutor?</span>
+        <span class="title">What happens if we are not satisfied with the home tutor?</span>
         <i class="fa-solid fa-plus"></i>
       </header>
-  
-  <p class="description">
-    Once we receive a non-satisfactory feedback, we will immediately replace the assigned home tutor, to ensure
-            our clients
-            get a 100% satisfaction. However, we are sure this would rarely occur.
-  </p>
-  
+      <p class="description">
+        Once we receive a non-satisfactory feedback, we will immediately replace the assigned home tutor, to ensure our clients get a 100% satisfaction. However, we are sure this would rarely occur.
+      </p>
     </div>
-  
-  <div class="accordion-content">
+
+    <div class="accordion-content">
       <header>
         <span class="title">How do we pay for the private home tutor?</span>
         <i class="fa-solid fa-plus"></i>
       </header>
-  
-  <p class="description">
-    Parents can make payments by paying into Light Up Your World account. The agreed cost for the class would be
-            based on the clients location, number of children and duration.
-  </p>
-  
+      <p class="description">
+        Parents can make payments by paying into Light Up Your World account. The agreed cost for the class would be based on the client's location, number of children and duration.
+      </p>
     </div>
-  
   </div>
 
-  
 
-  <div class="category-wrapper" id="gallery">
-    <div class="cat">
-      <div class="image">
-        <img src="./assets/images/FB_IMG_16981497342682709.jpg" alt="">
-      </div>
-
+  <!-- GALLERY SECTION -->
+  <section class="gallery" id="gallery">
+  <h2 class="gallery-title">Gallery</h2>
+  <div class="gallery-grid">
+    <div class="gallery-item">
+      <img src="assets/images/FB_IMG_17508584065006497.jpg" alt="Gallery image 1">
     </div>
-
-
-    <div class="cat">
-      <div class="image">
-        <img src="./assets/images/FB_IMG_16981497342682709.jpg" alt="">
-      </div>
-
+    <div class="gallery-item">
+      <img src="assets/images/FB_IMG_16981497342682709.jpg" alt="Gallery image 2">
     </div>
-
-    <div class="cat">
-      <div class="image">
-        <img src="./assets/images/IMG-20231214-WA0045.jpg" alt="">
-      </div>
-
+    <div class="gallery-item">
+      <img src="assets/images/FB_IMG_16981497528110233.jpg" alt="Gallery image 3">
     </div>
-
-    <div class="cat">
-
-      <div class="image">
-        <img src="./assets/images/IMG-20231214-WA0048.jpg" alt="">
-      </div>
-
+    <div class="gallery-item">
+      <img src="assets/images/FB_IMG_17508557378681194.jpg" alt="Gallery image 4">
     </div>
-
-    <div class="cat">
-      <div class="image">
-        <img src="./assets/images/FB_IMG_16981497528110233.jpg" alt="">
-      </div>
-
+    <div class="gallery-item">
+      <img src="assets/images/IMG-20231214-WA0044.jpg" alt="Gallery image 5">
     </div>
-
-    <div class="cat">
-      <div class="image">
-        <img src="./assets/images/IMG-20231214-WA0044.jpg" alt="">
-      </div>
-
+    <div class="gallery-item">
+      <img src="assets/images/IMG-20231214-WA0045.jpg" alt="Gallery image 6">
     </div>
-
+    <div class="gallery-item">
+      <img src="assets/images/FB_IMG_17508584577084984.jpg" alt="Gallery image 6">
+    </div>
+    <div class="gallery-item">
+      <img src="assets/images/FB_IMG_17508584865937221.jpg" alt="Gallery image 6">
+    </div>
+    <div class="gallery-item">
+      <img src="assets/images/FB_IMG_17513781231763024.jpg" alt="Gallery image 6">
+    </div>
+    <div class="gallery-item">
+      <img src="assets/images/FB_IMG_17513781958595271.jpg" alt="Gallery image 6">
+    </div>
   </div>
+</section>
+
 
   <div class="last-page">
-    <div class="excel">
-      <span class="excel-1" style="color: rgb(5, 211, 5);"> Watch your child excel!</span>
-      <p>Hire a professional home tutor for your child today.</p>
+  <div class="excel">
+    <h2 class="excel-heading">🎓 Watch Your Child <span class="highlight">Excel</span>!</h2>
+    <p class="excel-text">Hire a professional home tutor today and unlock your child’s full potential in a nurturing, one-on-one environment.</p>
+
+  </div>
+</div>
+
+
+  <footer id="contact-us" class="footer">
+  <div class="footer-container">
+    <!-- Contact Section -->
+    <div class="footer-contact">
+      <div class="logo">
+        <img src="./assets/images/20231025_131154.jpg" alt="Logo" />
+      </div>
+      <p><strong>Address:</strong> CDS 9, Harmonic Plaza, Mike Akhigbe / Ebitu Ukiwe Street, Jabi, Abuja.</p>
+      <p><strong>Phone:</strong> 09053494015</p>
+      <p><strong>Email:</strong> lightupyourworld@gmail.com</p>
+
+      <div class="social-icons">
+        <a href="#"><i class="fa-brands fa-pinterest"></i></a>
+        <a href="https://www.facebook.com/lightupyourworld?mibextid=ZbWKwL"><i class="fa-brands fa-facebook-f"></i></a>
+        <a href="#"><i class="fa-brands fa-twitter"></i></a>
+        <a href="#"><i class="fa-brands fa-instagram"></i></a>
+        <a href="#" id="navbar"><i class="fa fa-arrow-up"></i></a>
+      </div>
+
+      <div class="footer-map">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3939.763879494643!2d7.415649215269601!3d9.068894893502333!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x104e75130c22afab%3A0xf2e993f27f7be31a!2sHarmonic%20Plaza%2C%20Jabi!5e0!3m2!1sen!2sng!4v1719330391296!5m2!1sen!2sng"
+          width="100%"
+          height="200"
+          style="border:0;"
+          allowfullscreen=""
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade">
+        </iframe>
+      </div>
+    </div>
+
+    <!-- Newsletter Section -->
+    <div class="footer-newsletter">
+      <h4>Join Our Newsletter</h4>
+      <p>Get email updates about our services and special offers.</p>
+      <form class="footer-form">
+        <input type="email" placeholder="example@gmail.com" required />
+        <button type="submit">Subscribe</button>
+      </form>
     </div>
   </div>
 
-
-  <footer id="contact us">
-    <div class="contact-area">
-      <div class="logo"> <img src="./assets/images/20231025_131154.jpg" alt=""> </div>
-      <span class="MD-text1">Address: CDS 9, Harmonic Plaza, Mike Akhigbe/ Ebitu Ukiwe Street, Jabi, Abuja.</span>
-      <span class="MD-text2">phone: 09053494015 </span>
-      <span class="MD-text3">Email: lightupyourworld@gmail.com</span>
-
-      <div class="social-icons">
-        <a href=""> <i class="fa-brands fa-pinterest"></i></a>
-        <a href="https://www.facebook.com/lightupyourworld?mibextid=ZbWKwL"><i class="fa-brands fa-facebook-f"></i></a>
-        <a href=""><i class="fa-brands fa-twitter"></i></a>
-        <a href=""><i class="fa-brands fa-instagram"></i></a>
-        <a id="navbar" style="color: white;" href=""><i class="fa fa-arrow-up"></i></a>
-      </div>
-
+  <!-- Bottom Bar -->
+  <div class="footer-bottom">
+    <p>&copy; 2025 Light Up Your World. All rights reserved.</p>
+    <div class="footer-legal">
+      <a href="#">Privacy Policy</a>
+      <span>|</span>
+      <a href="#">Terms of Service</a>
     </div>
+    <a href="#top" class="scroll-top" title="Back to top"><i class="fa fa-arrow-up"></i></a>
+  </div>
+</footer>
+
+<!-- WhatsApp Chat -->
+<a href="https://wa.me/2349053494015" class="whatsapp-float" target="_blank" aria-label="Chat on WhatsApp">
+  <i class="fa-brands fa-whatsapp"></i>
+</a>
 
 
-    <div class="news-area">
-      <div class="news1">Join Our News Letter Now</div>
-      <span class="info3">Contact Us</span>
-      <p>Get Email updates about our services and special offers.</p>
-      <form action="" class="footer-form">
-        <input type="email" id="email" name="email" placeholder="example@gmail.com"  style="outline: none;"/>
-        <div class="btn">Subscribe</div>
-      </form>
-    </div>
-  </footer>
-
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
   <script src="script.js"></script>
-
+  
+  
 </body>
 
 </html>

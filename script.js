@@ -1,45 +1,63 @@
-function toggleMenu() {
-    let linkDiv = document.getElementById("mobile-link");
-     if (linkDiv.style.display !== "block") {
-        linkDiv.style.display = "block";
-        document.getElementById("menu").innerHTML = '<i class="fa fa-times"></i>';
-     }
-     else {
-        linkDiv.style.display = "none";
-        document.getElementById("menu");
-        document.getElementById("menu").innerHTML = '<i class="fa fa-bars"></i>';
-     }
-} 
+ const toggle = document.getElementById("menu-toggle");
+const navLinks = document.getElementById("navLinks");
+const navbar = document.getElementById("navbar");
 
-const accordionContent = document.querySelectorAll(".accordion-content")
+// Show/hide menu + animate icon
+toggle.addEventListener("click", () => {
+  navLinks.classList.toggle("show");
+  toggle.classList.toggle("active");
+});
 
-accordionContent.forEach((item, index) => {
-   let header = item.querySelector("header");
-   header.addEventListener("click", () =>{
-item.classList.toggle("open");
-  
-let description = item.querySelector(".description");
+// Scroll background change
+window.addEventListener("scroll", function () {
+  navbar.classList.toggle("scrolled", window.scrollY > 50);
+});
 
-if(item.classList.contains ("open")){
-   description.style.height =   `${description.scrollHeight}px`;
-   item.querySelector("i").classList.replace("fa-plus", "fa-minus");
-}else{
-   description.style.height = "0px";
-   item.querySelector("i").classList.replace("fa-minus", "fa-plus");
-}
-removeOpen(index);
 
-}) 
-   
-})
 
-function removeOpen(index1){
- accordionContent.forEach((item2, index2) =>  {
-if(index1 != index2){
-  item2.classList.remove("open"); 
-let des = item2.querySelector(".description"); 
-des.style.height = "0px";
-item2.querySelector("i").classList.replace("fa-minus", "fa-plus");
-}
- })
-}
+const headers = document.querySelectorAll('.accordion-content header');
+
+    headers.forEach(header => {
+      header.addEventListener('click', () => {
+        const parent = header.parentElement;
+        const description = parent.querySelector('.description');
+
+        // Close all others
+        document.querySelectorAll('.accordion-content').forEach(item => {
+          if (item !== parent) {
+            item.classList.remove('active');
+            item.querySelector('.description').style.maxHeight = null;
+          }
+        });
+
+        // Toggle current
+        parent.classList.toggle('active');
+        if (parent.classList.contains('active')) {
+          description.style.maxHeight = description.scrollHeight + 'px';
+        } else {
+          description.style.maxHeight = null;
+        }
+      });
+    });
+
+
+
+
+   const swiper = new Swiper('.testimonialSwiper', {
+  slidesPerView: 1,
+  spaceBetween: 20,
+  loop: true,
+  autoHeight: false, // ✅ Prevent height jump
+  pagination: {
+    el: '.swiper-pagination',
+    clickable: true,
+  },
+  breakpoints: {
+    768: {
+      slidesPerView: 2,
+    },
+    1024: {
+      slidesPerView: 3,
+    }
+  }
+});
